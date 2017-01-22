@@ -11,3 +11,4 @@ set_target_properties(CPPclass PROPERTIES
     IMPORTED_LINK_INTERFACE_LANGUAGES "CXX"
     )
 add_executable (code128 ${CODE_128_AUTO__FILES})
+target_link_libraries(code128 CPPclass stdc++)
