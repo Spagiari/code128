@@ -5,10 +5,5 @@ SET(CODE_128_AUTO__FILES
     ${PROJECT_SOURCE_DIR}/src/code128.cpp
     )
 
-add_library(CPPclass STATIC IMPORTED)
-set_target_properties(CPPclass PROPERTIES
-    IMPORTED_LOCATION ./libCPPclass.a
-    IMPORTED_LINK_INTERFACE_LANGUAGES "CXX"
-    )
 add_executable (code128 ${CODE_128_AUTO__FILES})
-target_link_libraries(code128 CPPclass stdc++)
+target_link_libraries(code128 stdc++)
