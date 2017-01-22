@@ -1,5 +1,5 @@
 cmake_minimum_required (VERSION 2.6)
-project (code128AUTO)
+project (code128AUTO CXX)
 
 # Initialize CXXFLAGS.
 set(CMAKE_CXX_FLAGS                "-Wall -std=c++11 -Wno-unused-function")
